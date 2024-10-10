@@ -15,9 +15,9 @@ document.querySelectorAll(".mobile-menu li").forEach((link) => {
 
 // Phone mask
 const phoneInput = document.querySelector("#phone");
-phoneInput.placeholder = "+38(0__)___-__-__";
+phoneInput.placeholder = "+38 (0__) ___-__-__";
 const mask = IMask(phoneInput, {
-    mask: "+38 (\\000)000-00-00"
+    mask: "+38 (\\000) 000-00-00"
 });
 
 // Order date

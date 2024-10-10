@@ -85,6 +85,7 @@ header{
     row-gap: 15px;
     transition: all 0.2s;
     transform: translateY(-110%);
+    z-index: 99;
 }
 .mobile-menu.active{
     transform: translateY(0);
@@ -298,7 +299,7 @@ header{
     border-radius: 30px;
     border: none;
     margin-bottom: 15px;
-    padding: 13px 17px;
+    padding: 13px 5px 13px 17px;
     padding-left: 60px;
     background-image: url("../images/list-icon-gray.png");
     background-repeat: no-repeat;
@@ -309,6 +310,9 @@ header{
     color: #000000;
     font-size: 1.2rem;
     font-weight: 700;
+}
+#phone::placeholder{
+    letter-spacing: -1.5px;
 }
 
 #order-form button{
@@ -554,6 +558,17 @@ header{
     #order-form{
         width: 45%;
     }
+    #order-form input{
+        background-position: 5px 70%;
+        padding-left: 40px;
+        font-size: 1rem;
+    }
+    #order-form input::placeholder{
+        font-size: 1rem;
+    }
+    #order-form #phone{
+        letter-spacing: -0.8px;
+    }
 
     .cards{
         align-items: stretch;
@@ -580,6 +595,11 @@ header{
 
     .title{
         width: 75%;
+    }
+
+    #order-form input{
+        background-position: 17px 70%;
+        padding-left: 55px;
     }
 }
 
@@ -647,13 +667,10 @@ header{
         padding: 21px 18px 30px;
     }
     #order-form input{
-        font-size: 1rem;
-        background-position: 10px 70%;
-        padding-left: 45px;
+        background-position: 17px 70%;
+        padding-left: 50px;
     }
-    #order-form input::placeholder{
-        font-size: 1rem;
-    }
+
     .order-date{
         font-size: 1.125rem;
     }
@@ -713,18 +730,21 @@ header{
         width: 23.5%;
     }
     #order-form form{
-        padding: 21px 24px 30px;
+        padding: 21px 15px 30px;
     }
     #order-form input{
-        background-position: 17px 70%;
-        padding-left: 55px;
-    }
-    #phone{
-        letter-spacing: -0.1rem;
+        background-position: 14px 70%;
+        padding-left: 50px;
     }
 
     .cards{
         flex-wrap: nowrap;
         gap: 85px;
+    }
+}
+
+@media all and (min-width: 1180px) {
+    #order-form form{
+        padding: 21px 24px 30px;
     }
 }
