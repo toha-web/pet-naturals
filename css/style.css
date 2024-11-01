@@ -95,6 +95,7 @@ header{
     line-height: 0;
     position: relative;
     display: block;
+    z-index: 100;
 }
 .mobile-menu-icon .burger {
     cursor: pointer;
